@@ -6854,7 +6854,7 @@ return (function( root, factory ) {
                     }
     
     
-                    return me.trigger( 'error', me._status ? 'http' : 'abort' );
+                    return me.trigger( 'error', me._status ? 'http-'+xhr.status : 'abort' );
                 };
     
                 me._xhr = xhr;
